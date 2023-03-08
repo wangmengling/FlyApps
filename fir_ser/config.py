@@ -67,7 +67,7 @@ class DBCONF(object):
     """
     mysql数据库信息
     """
-    host = '127.0.0.1'  # 可以通过主机名进行通信，如果是本地部署，可填写 127.0.0.1
+    host = 'mariadb'  # 可以通过主机名进行通信，如果是本地部署，可填写 127.0.0.1
     port = '3306'
     password = 'KGzKjZpWBp4R4RSa'
     user = 'flyuser'
@@ -78,7 +78,7 @@ class CACHECONF(object):
     """
     redis 缓存配置
     """
-    host = '127.0.0.1'   # 可以通过主机名进行通信，如果是本地部署，可填写 127.0.0.1
+    host = 'redis'   # 可以通过主机名进行通信，如果是本地部署，可填写 127.0.0.1
     port = '6379'
     password = 'nineven'
 
