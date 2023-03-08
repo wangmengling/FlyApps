@@ -32,6 +32,7 @@ from api.views.report import ReportView
 from api.views.storage import StorageView, CleanStorageView, ShareStorageView, StorageConfigView, StorageExchangeView
 from api.views.thirdlogin import ValidWxChatToken, ThirdWxAccount
 from api.views.uploads import AppAnalyseView, UploadView
+from api.views.logout import LogoutView
 
 # router=DefaultRouter()
 # router.register("apps", AppsView)
@@ -40,6 +41,7 @@ urlpatterns = [
     # path("",include(router.urls)),
     re_path("^rip", GetRemoteIp.as_view()),
     re_path("^login", LoginView.as_view()),
+    re_path("^logout", LogoutView.as_view()),
     re_path("^auth$", AuthorizationView.as_view()),
     re_path("^authc$", ChangeAuthorizationView.as_view()),
     re_path("^change$", ChangeInfoView.as_view()),
