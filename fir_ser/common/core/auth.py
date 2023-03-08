@@ -81,10 +81,10 @@ class AdminTokenAuthentication(BaseAuthentication):
 
     def authenticate(self, request):
         result = get_user_from_request_auth(request)
-        if result:
-            user_obj, token = result
+        # if result:
+            # user_obj, token = result
             # if user_obj and user_obj.role == 3:
-                return result
+                # return result
             # else:
                 # raise AuthenticationFailed({"code": 1001, "error": "无效的认证"})
         return result

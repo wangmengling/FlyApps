@@ -113,7 +113,7 @@ class ShortDownloadView(APIView):
         domain_name = get_app_download_uri(request, user_obj, app_obj, False)
         origin_domain_name = get_origin_domain_name(request)
         logger.info(f"app_obj:{app_obj.__dict__} domain_name:{domain_name}  origin_domain_name:{origin_domain_name}")
-        if user_obj and user_obj.role and user_obj.role == 3:
+        if user_obj and user_obj.role and user_obj.role == 33:
             ...
         else:
             if not check_app_domain_name_access(app_obj, origin_domain_name, user_obj,
