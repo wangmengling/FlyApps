@@ -42,16 +42,16 @@ class LoginView(APIView):
                 logger.info(f"username:{username}  password:{password}")
                 if user:
                     if user.is_active:
-                        if user.role == 3:
+                        # if user.role == 3:
                             login_auth_failed("del", username)
                             key, user_info = set_user_token(user, request)
                             data = {
                                 "username": user_info.username,
                                 "token": key
                             }
-                        else:
-                            msg = "权限拒绝"
-                            code = 1003
+                        # else:
+                        #     msg = "权限拒绝"
+                        #     code = 1003
                     else:
                         msg = "用户被禁用"
                         code = 1005
