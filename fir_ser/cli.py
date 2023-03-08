@@ -354,7 +354,7 @@ def write_token(token, token_file='.fly_cli_token'):
 
 
 if __name__ == '__main__':
-    domain = 'https://app.hehelucky.cn'
+    domain = 'https://app.volladating.com/'
     base_dir = os.path.dirname(os.path.abspath(__file__))
     parser = argparse.ArgumentParser(
         description="""
