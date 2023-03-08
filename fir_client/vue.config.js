@@ -98,10 +98,10 @@ const pro_base_env = {
 };
 
 const dev_base_env = {
-    baseUrl: 'https://app.hehelucky.cn/',
+    baseUrl: 'https://volladating.com/',
     index_static: '/',
-    baseShortUrl: 'https://app.hehelucky.cn/',
-    short_static: 'https://app.hehelucky.cn/short/',
+    baseShortUrl: 'https://volladating.com/',
+    short_static: 'https://volladating.com/short/',
     version: version,
 };
 let base_evn = dev_base_env;
