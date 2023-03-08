@@ -114,7 +114,7 @@ class AUTHCONF(object):
         "geetest": False,  # 是否开启geetest验证，如要开启请先配置geetest
         "register_type": {
             'sms': False,  # 短信注册
-            'email': False,  # 邮件注册
+            'email': True,  # 邮件注册
             'code': False,  # 邀请码注册,邀请码必填写，需要和短信，邮件一起使用
         }
     }
@@ -125,7 +125,7 @@ class AUTHCONF(object):
         "geetest": False,  # 是否开启geetest验证，如要开启请先配置geetest
         "change_type": {
             'sms': False,  # 短信注册
-            'email': False,  # 邮件注册
+            'email': True,  # 邮件注册
             'code': False,  # 邀请码注册,邀请码必填写，需要和短信，邮件一起使用
         }
     }
@@ -135,7 +135,7 @@ class AUTHCONF(object):
         "login_type": {
             'sms': False,  # 短信登录
             'email': False,  # 邮件登录
-            'up': False,  # 密码登录
+            'up': True,  # 密码登录
             'third': {
                 'wxp': THIRDLOGINCONF.wx_official.get('active')  # 微信公众号登录，需要在 THIRDLOGINCONF 配置好微信公众号登录
             },
