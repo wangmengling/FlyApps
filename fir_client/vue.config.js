@@ -98,10 +98,10 @@ const pro_base_env = {
 };
 
 const dev_base_env = {
-    baseUrl: 'https://volladating.com/',
+    baseUrl: 'https://app.volladating.com/',
     index_static: '/',
-    baseShortUrl: 'https://volladating.com/',
-    short_static: 'https://volladating.com/short/',
+    baseShortUrl: 'https://app.volladating.com/',
+    short_static: 'https://app.volladating.com/short/',
     version: version,
 };
 let base_evn = dev_base_env;
