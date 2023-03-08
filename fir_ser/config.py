@@ -11,8 +11,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 class DOMAINCONF(object):
-    API_DOMAIN = "https://volladating.com"  # 用与开启本地存储，上传应用配置
-    WEB_DOMAIN = "https://avolladating.com"  # 用于超级签跳转配置，该域名一般为前端页面域名
+    API_DOMAIN = "https://app.volladating.com"  # 用与开启本地存储，上传应用配置
+    WEB_DOMAIN = "https://app.volladating.com"  # 用于超级签跳转配置，该域名一般为前端页面域名
     MOBILEPROVISION = "https://static.hehejoy.cn/embedded3.mobileprovision"  # 用于苹果包企业签信任企业跳转
 
     DOWNLOAD_DEPLOYMENT_HASH_URL = "https://static.flyapps.top/download.v63.23.tar.gz"
