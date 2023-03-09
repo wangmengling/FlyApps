@@ -18,8 +18,9 @@ RUN cd /opt/zsign-1.1.2/ && g++ *.cpp common/*.cpp -lcrypto -O3 -std=c++11 -o zs
 COPY requirements.txt /opt/requirements.txt
 RUN cd /opt/ && pip install -U setuptools pip --ignore-installed && pip install --no-cache-dir -r requirements.txt && pip install --no-cache-dir uwsgi
 
-
+RUN chmod -R 777  /data/fir_ser/
 WORKDIR /data/fir_ser/
+RUN chmod -R 777  /data/fir_ser/
 COPY entrypoint.sh entrypoint.sh
 RUN addgroup --system --gid 101 nginx \
     && adduser --system --disabled-login --ingroup nginx --no-create-home --home /nonexistent --gecos "nginx user" --shell /bin/false --uid 101 nginx 
